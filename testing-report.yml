@@ -19,4 +19,14 @@
     Проверка авторизации с помощью Discord
   status: pass
 
+- summary: |
+    Проверка повторной регистрации email
+  status: fail
+
+- summary: |
+      Проверка создания игры с ботом  
+  status: pass
   
+- summary: |
+    Проверка создания игры с другом
+  status: fail
