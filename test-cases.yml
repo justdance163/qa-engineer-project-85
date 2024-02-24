@@ -6,10 +6,63 @@
   prerequisites: |
     Открыта главная страница веб-игры https://codebattle.hexlet.io/
   test-data: |
-    Сервис временной почты = https://10minutemail.net/
+    Email = testerov001@bk.ru
   steps:
     - Нажимаем на кнопку "Sign up"
     - Заполняем поля для регистрации
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Должна произойти переадресация на страницу https://codebattle.hexlet.io/#lobby с успешной авторизацией
+    
+- summary: |
+    Проверка успешной авторизации через электронную почту       
+  requirement: |
+    Успешная авторизация пользователя при введении валидных данных
+  prerequisites:
+    Учетная запись пользователя ранее создана
+  test-data: |
+    Email = testerov001@bk.ru
+    Password = qwerty123
+  steps: 
+    - Нажать "Sign in"
+    - Ввести тестовые данные в поля формы авторизации 
+    - Нажать "Submit"
+  expected-result: |
+    Пользователь успешно авторизован и попадает на главную страницу   
+    
+- summary: |
+    Проверка получения письма-подтверждение о регистрации на электронную почту
+  requirement: |
+    Пользователь должен получить письмо-подтверждение о регистрации на электронную почту
+  prerequisites: |
+    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+  test-data: |
+    Email = testerov001@bk.ru
+    Password = User_test1
+  steps:
+    - Нажимаем на кнопку "Sign up"
+    - Заполняем поля для регистрации
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Должно прийти письмо-подтверждение о регистрации на электронную почту
+
+- summary: |
+    Проверка повторной регистрации email
+  requirement: |
+    Ошибка регистрации при повторном использовнии email 
+  prerequisites:
+    email уже ранее зарегестрирован
+  test-data: |
+    Nickname = chipi_chipi
+    Email = testerov001@bk.ru
+    Password = qwerty
+    Password = qwerty
+  steps:
+    - Нажать "Sign up"
+    - Ввести тестовые данные в поля формы регистрации 
+    - Нажать "Submit"
+  expected-result: |
+    Пользователь не зарегестрирован под полем ввода email надпись "Email is already taken"
+
+    
+    
