@@ -93,3 +93,40 @@
     - Нажимаем на кнопку "Авторизовать"
   expected-result: |
     Пользователь успешно авторизован
+
+- summary: |
+    Проверка создания игры с ботом
+  requirement: |
+    Пользователь должен иметь возможность создавать игру с ботом
+  prerequisites: 
+    Пользователь авторизован в приложении
+  test-data: |
+    Открыта страница https://codebattle.hexlet.io/#lobby
+  steps:
+    - Нажать зеленую кнопку "CREATE A GAME"
+    - В поле "Game Type" нажать "With a bot"
+    - Нажать "Create battle"
+  expected-result: |
+    Игра с ботом успешно создана    
+
+- summary: |
+    Проверка создания игры с другом
+  requirement: |
+    Пользователь должен иметь возможность отправить приглашение на участие в игре
+  prerequisites: |
+    Открыта страница лобби веб-игры https://codebattle.hexlet.io/#lobby
+    Оба пользователя авторизованы
+  test-data: |
+    user-nickname1 = tip4ek16333
+    user-nickname2 = tip4ek163
+  steps:
+    //steps Пользователя № 1
+    - Нажать зеленую кнопку "CREATE A GAME"
+    - В поле "Game Type" нажать "With a friend"
+    - В поле "Choose opponent" написать ник друга "tip4ek163"
+    - Нажимаем кнопку "Create invite"
+    //steps Пользователя № 2
+    - Нажать на кнопку "Invites" в виде мечей
+    - Нажать кнопку "Fight"
+  expected-result: |
+    Игра с другом успешно создана   
