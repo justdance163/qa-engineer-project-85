@@ -64,5 +64,32 @@
   expected-result: |
     Пользователь не зарегестрирован под полем ввода email надпись "Email is already taken"
 
+- summary: |
+      Проверка авторизации через GitHub
+    requirement: |
+      Пользователь должен иметь возможность авторизации через GitHub
+    prerequisites:
+      Пользователь авторизован в GitHub 
+    test-data: |
+      Яндекс браузер 24.1.2.843 (64-bit)
+    steps:
+      - Нажать "Sign up"
+      - Нажать зеленую кнопку "Authorize vtm9"
+    expected-result: |
+      Пользователь успешно авторизован 
     
-    
+- summary: |
+    Проверка авторизации с помощью Discord
+  requirement: |
+    Пользователь должен иметь возможность авторизоваться с помощью Discord
+  prerequisites: |
+    Пользователь авторизован в Dicord
+  test-data: |
+    No data
+  steps:
+    - Открываем сайт https://codebattle.hexlet.io/
+    - Нажимаем на кнопку "Sign up"
+    - Нажимаем на кнопку "Sign in with Dicord"
+    - Нажимаем на кнопку "Авторизовать"
+  expected-result: |
+    Пользователь успешно авторизован
