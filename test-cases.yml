@@ -82,7 +82,7 @@
   prerequisites: 
     Пользователь авторизован в приложении
   test-data: |
-    Открыта страница https://codebattle.hexlet.io/#lobby
+    No data
   steps:
     - Нажать зеленую кнопку "CREATE A GAME"
     - В поле "Game Type" нажать "With a bot"
