@@ -4,7 +4,7 @@
   requirement: |
     Пользователь должен иметь возможность зарегистрироваться с помощью электронной почты
   prerequisites: |
-    Открыта главная страница веб-игры https://codebattle.hexlet.io/
+    Открыта главная страница 
   test-data: |
     Email = testerov001@bk.ru
   steps:
