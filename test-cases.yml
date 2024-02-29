@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница 
   test-data: |
-    Email = testerov001@bk.ru
+    No data
   steps:
     - Нажимаем на кнопку "Sign up"
     - Заполняем поля для регистрации
