@@ -37,10 +37,7 @@
   prerequisites:
     email уже ранее зарегестрирован
   test-data: |
-    Nickname = chipi_chipi
     Email = testerov001@bk.ru
-    Password = qwerty
-    Password = qwerty
   steps:
     - Нажать "Sign up"
     - Ввести тестовые данные в поля формы регистрации 
