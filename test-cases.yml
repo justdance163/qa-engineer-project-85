@@ -101,12 +101,12 @@
     user-nickname1 = tip4ek16333
     user-nickname2 = tip4ek163
   steps:
-    #steps Пользователя № 1
+    # steps Пользователя № 1
     - Нажать зеленую кнопку "CREATE A GAME"
     - В поле "Game Type" нажать "With a friend"
     - В поле "Choose opponent" написать ник друга "tip4ek163"
     - Нажимаем кнопку "Create invite"
-    #steps Пользователя № 2
+    # steps Пользователя № 2
     - Нажать на кнопку "Invites" в виде мечей
     - Нажать кнопку "Fight"
   expected-result: |
