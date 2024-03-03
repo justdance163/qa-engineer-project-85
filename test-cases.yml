@@ -68,7 +68,6 @@
   test-data: |
     No data
   steps:
-    - Открываем сайт https://codebattle.hexlet.io/
     - Нажимаем на кнопку "Sign up"
     - Нажимаем на кнопку "Sign in with Dicord"
     - Нажимаем на кнопку "Авторизовать"
